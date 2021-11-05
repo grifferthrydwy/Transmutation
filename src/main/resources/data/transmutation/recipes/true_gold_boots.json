@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    "W W",
+    "W W"
+  ],
+  "key": {
+    "W": {
+      "tag": "transmutation:true_gold_ingot"
+    },
+  },
+  "result": {
+    "item": "transmutation:true_gold_boots",
+    "count": 1
+  }
+}

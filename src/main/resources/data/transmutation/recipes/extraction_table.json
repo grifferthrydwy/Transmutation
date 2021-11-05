@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "WW ",
+    " R ",
+    " R "
+  ],
+  "key": {
+    "W": {
+      "tag": "minecraft:gold_ingot"
+    },
+    "R": {
+      "item": "minecraft:planks"
+    }
+  },
+  "result": {
+    "item": "transmutation:extraction_table",
+    "count": 1
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "W W",
+    "WWW",
+    "WWW"
+  ],
+  "key": {
+    "W": {
+      "tag": "transmutation:true_gold_ingot"
+    },
+  },
+  "result": {
+    "item": "transmutation:true_gold_chestplate",
+    "count": 1
+  }
+}
