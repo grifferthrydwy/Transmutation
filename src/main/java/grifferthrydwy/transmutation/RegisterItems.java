@@ -24,10 +24,6 @@ public class RegisterItems {
     public static ToolItem TRUE_GOLD_PICKAXE = new TrueGoldPickaxeItem(TrueGoldToolMaterial.INSTANCE, 1, -2.8F, new Item.Settings().group(ItemGroup.TOOLS));
     public static ToolItem TRUE_GOLD_AXE = new TrueGoldAxeItem(TrueGoldToolMaterial.INSTANCE, 5, -3.0F, new Item.Settings().group(ItemGroup.TOOLS));
     public static ToolItem TRUE_GOLD_HOE = new TrueGoldHoeItem(TrueGoldToolMaterial.INSTANCE, -4, 0.0F, new Item.Settings().group(ItemGroup.TOOLS));
-    public static final ExtractionTable EXTRACTION_TABLE = new ExtractionTable(FabricBlockSettings.of(Material.METAL).strength(4.0f));
-    public static final Block TRANSMUTATION_TABLE = new Block(FabricBlockSettings.of(Material.METAL).strength(4.0f));
-    public static final Block BLOCK_OF_LEAD = new Block(FabricBlockSettings.of(Material.METAL).strength(4.0f));
-    public static final Block BLOCK_OF_TRUE_GOLD = new Block(FabricBlockSettings.of(Material.METAL).strength(4.0f));
     public static void register() {
         Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "true_gold"), TRUE_GOLD_INGOT);
         Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "true_gold_helmet"), TRUE_GOLD_HELMET);
@@ -41,9 +37,9 @@ public class RegisterItems {
         Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "true_gold_axe"), TRUE_GOLD_AXE);
         Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "true_gold_hoe"), TRUE_GOLD_HOE);
         Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "true_gold_pickaxe"), TRUE_GOLD_PICKAXE);
-        Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "extraction_table"), new BlockItem(EXTRACTION_TABLE, new FabricItemSettings().group(ItemGroup.DECORATIONS)));
-        Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "transmutation_table"), new BlockItem(TRANSMUTATION_TABLE, new FabricItemSettings().group(ItemGroup.DECORATIONS)));
-        Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "lead_block"), new BlockItem(BLOCK_OF_LEAD, new FabricItemSettings().group(ItemGroup.BUILDING_BLOCKS)));
-        Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "true_gold_block"), new BlockItem(BLOCK_OF_TRUE_GOLD, new FabricItemSettings().group(ItemGroup.BUILDING_BLOCKS)));
+        Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "extraction_table"), new BlockItem(RegisterBlocks.EXTRACTION_TABLE, new FabricItemSettings().group(ItemGroup.DECORATIONS)));
+        Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "transmutation_table"), new BlockItem(RegisterBlocks.TRANSMUTATION_TABLE, new FabricItemSettings().group(ItemGroup.DECORATIONS)));
+        Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "lead_block"), new BlockItem(RegisterBlocks.BLOCK_OF_LEAD, new FabricItemSettings().group(ItemGroup.BUILDING_BLOCKS)));
+        Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "true_gold_block"), new BlockItem(RegisterBlocks.BLOCK_OF_TRUE_GOLD, new FabricItemSettings().group(ItemGroup.BUILDING_BLOCKS)));
     }
 }

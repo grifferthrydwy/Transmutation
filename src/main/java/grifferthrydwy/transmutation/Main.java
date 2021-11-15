@@ -12,8 +12,9 @@ public class Main implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		LOGGER.info("Hello Fabric world!");
-		RegisterItems.register();
 		RegisterBlocks.register();
+		RegisterItems.register();
+
 		//on initialize of code, does these methods^^^
 	}
 }
