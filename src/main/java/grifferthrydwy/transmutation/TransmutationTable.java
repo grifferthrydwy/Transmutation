@@ -16,24 +16,29 @@ public class TransmutationTable extends Block {
         super(settings);
     }
 
-    ItemStack resultitem;
+    int requiredLevel = 0;
     @Override
     public ActionResult onUse(BlockState blockState, World world, BlockPos blockPos, PlayerEntity player, Hand hand, BlockHitResult hit) {
-        if (player.getStackInHand(hand).getItem()==RegisterItems.LEAD_INGOT) {
-            ItemStack resultitem = RegisterItems.TRUE_GOLD_INGOT.getDefaultStack();
-        }
-        final int itemCount = player.getStackInHand(hand).getCount();
-        final int experience = player.totalExperience;
-        final int expcost = 1;
-        final int totalcost = expcost*itemCount;
-        if (totalcost<experience) {
-            player.addExperience(-totalcost);
-            resultitem.setCount(itemCount);
-            player.setStackInHand(hand, resultitem);
-            return ActionResult.SUCCESS;
-
+        if ((player.getStackInHand(hand).getItem() == RegisterItems.LEAD_INGOT)) {
+            levelRequired();
+            if ((player.experienceLevel) > (requiredLevel*499))  {
+                final int itemCount = player.getStackInHand(hand).getCount();
+                player.addExperience((-1045970));
+                ItemStack truegold = RegisterItems.TRUE_GOLD_INGOT.getDefaultStack();
+                truegold.setCount(itemCount);
+                player.setStackInHand(hand, truegold);
+                return ActionResult.SUCCESS;
+            } else  {
+                return ActionResult.FAIL;
+            }
         } else  {
             return ActionResult.FAIL;
+        }
+    }
+
+    private void levelRequired(PlayerEntity player, Hand hand) {
+        if ((player.getStackInHand(hand).getItem() == RegisterItems.LEAD_INGOT))    {
+            requiredLevel++;
         }
     }
 }
