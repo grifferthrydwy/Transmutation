@@ -1,13 +1,13 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "WW ",
-    " R ",
-    " R "
+    " WW",
+    " RR",
+    " RR"
   ],
   "key": {
     "W": {
-      "tag": "minecraft:gold_ingot"
+      "tag": "minecraft:true_gold_ingot"
     },
     "R": {
       "item": "minecraft:planks"

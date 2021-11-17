@@ -25,7 +25,7 @@ public class RegisterItems {
     public static ToolItem TRUE_GOLD_AXE = new TrueGoldAxeItem(TrueGoldToolMaterial.INSTANCE, 5, -3.0F, new Item.Settings().group(ItemGroup.TOOLS));
     public static ToolItem TRUE_GOLD_HOE = new TrueGoldHoeItem(TrueGoldToolMaterial.INSTANCE, -4, 0.0F, new Item.Settings().group(ItemGroup.TOOLS));
     public static void register() {
-        Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "true_gold"), TRUE_GOLD_INGOT);
+        Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "true_gold_ingot"), TRUE_GOLD_INGOT);
         Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "true_gold_helmet"), TRUE_GOLD_HELMET);
         Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "true_gold_chestplate"), TRUE_GOLD_CHESTPLATE);
         Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "true_gold_leggings"), TRUE_GOLD_LEGGINGS);
