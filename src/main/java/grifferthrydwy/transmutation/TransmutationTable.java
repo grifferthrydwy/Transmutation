@@ -24,18 +24,18 @@ public class TransmutationTable extends Block {
     public ActionResult onUse(BlockState blockState, World world, BlockPos blockPos, PlayerEntity player, Hand hand, BlockHitResult hit) {
         if ((player.getStackInHand(hand).getItem() == RegisterItems.LEAD_INGOT)) {
             int xpneeded = requiredExperience((net.minecraft.entity.player.PlayerEntity) PlayerEntity, (net.minecraft.util.Hand) Hand);
-            if ((player.experienceLevel) > (xpneeded-1)) {
+            if ((player.experienceLevel) > (xpneeded - 1)) {
                 final int itemCount = player.getStackInHand(hand).getCount();
                 player.addExperience((-xpneeded));
-                ItemStack result = resultItem((net.minecraft.entity.player.PlayerEntity) PlayerEntity,(net.minecraft.util.Hand) Hand).getDefaultStack();
+                ItemStack result = resultItem((net.minecraft.entity.player.PlayerEntity) PlayerEntity, (net.minecraft.util.Hand) Hand).getDefaultStack();
                 result.setCount(itemCount);
                 player.setStackInHand(hand, result);
                 return ActionResult.SUCCESS;
-            } else {
-                return ActionResult.FAIL;
-            }
+                } else {
+                    return ActionResult.FAIL;
+                }
         } else {
-            return ActionResult.FAIL;
+                return ActionResult.FAIL;
         }
     }
 

@@ -22,7 +22,7 @@ public class ExtractionTable extends Block {
         //if (!(player.getStackInHand(hand).getItem() instanceof LeadItem)) {
         final int itemCount = player.getStackInHand(hand).getCount();
         player.addExperience((itemCount));
-        ItemStack lead = RegisterItems.RAW_LEAD.getDefaultStack();
+        ItemStack lead = RegisterItems.LEAD_SCRAP.getDefaultStack();
         lead.setCount(itemCount);
         player.setStackInHand(hand, lead);
         return ActionResult.SUCCESS;

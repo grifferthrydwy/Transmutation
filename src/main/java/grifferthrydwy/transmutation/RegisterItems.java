@@ -14,7 +14,7 @@ public class RegisterItems {
     public static final ArmorMaterial TRUE_GOLD = new TrueGoldArmorMaterial();
     public static final Item TRUE_GOLD_INGOT = new Item(new Item.Settings().group(ItemGroup.MISC));
     public static final Item LEAD_INGOT = new Item(new Item.Settings().group(ItemGroup.MISC));
-    public static final Item RAW_LEAD = new Item(new Item.Settings().group(ItemGroup.MISC));
+    public static final Item LEAD_SCRAP = new Item(new Item.Settings().group(ItemGroup.MISC));
     public static final Item TRUE_GOLD_HELMET = new ArmorItem(TRUE_GOLD, EquipmentSlot.HEAD, new Item.Settings().group(ItemGroup.COMBAT));
     public static final Item TRUE_GOLD_CHESTPLATE = new ArmorItem(TRUE_GOLD, EquipmentSlot.CHEST, new Item.Settings().group(ItemGroup.COMBAT));
     public static final Item TRUE_GOLD_LEGGINGS = new ArmorItem(TRUE_GOLD, EquipmentSlot.LEGS, new Item.Settings().group(ItemGroup.COMBAT));
@@ -31,7 +31,7 @@ public class RegisterItems {
         Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "true_gold_leggings"), TRUE_GOLD_LEGGINGS);
         Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "true_gold_boots"), TRUE_GOLD_BOOTS);
         Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "lead_ingot"), LEAD_INGOT);
-        Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "raw_lead"), RAW_LEAD);
+        Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "lead_scrap"), LEAD_SCRAP);
         Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "true_gold_shovel"), TRUE_GOLD_SHOVEL);
         Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "true_gold_sword"), TRUE_GOLD_SWORD);
         Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "true_gold_axe"), TRUE_GOLD_AXE);
