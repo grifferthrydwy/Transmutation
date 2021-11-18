@@ -1,9 +1,9 @@
-//package grifferthrydwy.transmutation;
+package grifferthrydwy.transmutation;
 
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 
-//public class TransmutationRecipe {
+public class TransmutationRecipe {
 
     //if ( )
 
@@ -14,4 +14,4 @@ import net.minecraft.item.ItemStack;
  //       return RegisterItems.RAW_LEAD;
  //   }
 
-//}
+}
