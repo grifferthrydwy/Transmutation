@@ -27,7 +27,7 @@ public class TransmutationTable extends Block {
     public ActionResult onUse(BlockState blockState, World world, BlockPos blockPos, PlayerEntity player, Hand hand, BlockHitResult hit) {
         if (player instanceof ServerPlayerEntity) {
             int xpneeded = requiredExperience(player, hand);
-            if ((player.experienceLevel) > (xpneeded - 1)) {
+            if ((player.totalExperience) > (xpneeded - 1)) {
                 final int itemCount = player.getStackInHand(hand).getCount();
                 player.addExperience((-xpneeded));
                 ItemStack result = (Objects.requireNonNull(resultItem(player, hand))).getDefaultStack();
@@ -69,7 +69,7 @@ public class TransmutationTable extends Block {
         } else if ((player.getStackInHand(hand).getItem() == Items.WARPED_STEM)) {
             return Items.OAK_LOG;
         } else  {
-            return null;
+            return player.getStackInHand(hand).getItem();
         }
 
     }
