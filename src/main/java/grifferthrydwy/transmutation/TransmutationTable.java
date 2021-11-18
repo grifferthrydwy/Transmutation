@@ -13,6 +13,8 @@ import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
+import java.util.Objects;
+
 public class TransmutationTable extends Block {
     private Object PlayerEntity;
     private Object Hand;
@@ -24,11 +26,11 @@ public class TransmutationTable extends Block {
     @Override
     public ActionResult onUse(BlockState blockState, World world, BlockPos blockPos, PlayerEntity player, Hand hand, BlockHitResult hit) {
         if (player instanceof ServerPlayerEntity) {
-            int xpneeded = requiredExperience((net.minecraft.entity.player.PlayerEntity) PlayerEntity, (net.minecraft.util.Hand) Hand);
+            int xpneeded = requiredExperience(player, hand);
             if ((player.experienceLevel) > (xpneeded - 1)) {
                 final int itemCount = player.getStackInHand(hand).getCount();
                 player.addExperience((-xpneeded));
-                ItemStack result = resultItem((net.minecraft.entity.player.PlayerEntity) PlayerEntity, (net.minecraft.util.Hand) Hand).getDefaultStack();
+                ItemStack result = (Objects.requireNonNull(resultItem(player, hand))).getDefaultStack();
                 result.setCount(itemCount);
                 player.setStackInHand(hand, result);
                 return ActionResult.SUCCESS;
