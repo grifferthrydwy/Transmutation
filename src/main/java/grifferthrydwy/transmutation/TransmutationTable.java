@@ -27,6 +27,19 @@ public class TransmutationTable extends Block {
         put(Items.OAK_LOG, Items.BIRCH_LOG);
         put(Items.CRIMSON_STEM, Items.WARPED_STEM);
         put(Items.WARPED_STEM, Items.OAK_LOG);
+        put(Items.BEETROOT_SEEDS, Items.WHEAT_SEEDS);
+        put(Items.WHEAT_SEEDS, Items.BEETROOT_SEEDS);
+        put(Items.CARROT, Items.POTATO);
+        put(Items.POTATO, Items.CARROT);
+        put(Items.SWEET_BERRIES, Items.GLOW_BERRIES);
+        put(Items.GLOW_BERRIES, Items.SWEET_BERRIES);
+        put(Items.PUMPKIN_SEEDS, Items.MELON_SEEDS);
+        put(Items.SUGAR, Items.REDSTONE);
+        put(Items.REDSTONE, Items.GLOWSTONE_DUST);
+        put(Items.GLOWSTONE_DUST, Items.GUNPOWDER);
+        put(Items.GUNPOWDER, Items.SUGAR);
+        put(Items.QUARTZ, Items.AMETHYST_SHARD);
+        put(Items.AMETHYST_SHARD, Items.QUARTZ);
     }};
 
     public TransmutationTable(Settings settings) {
@@ -37,6 +50,7 @@ public class TransmutationTable extends Block {
     public ActionResult onUse(BlockState blockState, World world, BlockPos blockPos, PlayerEntity player, Hand hand, BlockHitResult hit) {
         if (player instanceof ServerPlayerEntity) {
             int xpneeded = requiredExperience(player, hand);
+            // Check if the player has enough experience OR is in creative
             if (player.totalExperience > xpneeded - 1 || player.isCreative()) {
                 player.addExperience((-xpneeded));
                 ItemStack result = recipe(player.getStackInHand(hand).getItem()).getDefaultStack();
