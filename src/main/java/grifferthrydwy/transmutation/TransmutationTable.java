@@ -23,7 +23,7 @@ public class TransmutationTable extends Block {
 
     @Override
     public ActionResult onUse(BlockState blockState, World world, BlockPos blockPos, PlayerEntity player, Hand hand, BlockHitResult hit) {
-        if (player != null && player instanceof ServerPlayerEntity && (player.getStackInHand(hand).getItem() == RegisterItems.LEAD_INGOT)) {
+        if (player instanceof ServerPlayerEntity) {
             int xpneeded = requiredExperience((net.minecraft.entity.player.PlayerEntity) PlayerEntity, (net.minecraft.util.Hand) Hand);
             if ((player.experienceLevel) > (xpneeded - 1)) {
                 final int itemCount = player.getStackInHand(hand).getCount();
