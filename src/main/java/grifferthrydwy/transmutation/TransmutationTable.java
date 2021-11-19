@@ -34,6 +34,7 @@ public class TransmutationTable extends Block {
         put(Items.SWEET_BERRIES, Items.GLOW_BERRIES);
         put(Items.GLOW_BERRIES, Items.SWEET_BERRIES);
         put(Items.PUMPKIN_SEEDS, Items.MELON_SEEDS);
+        put(Items.MELON_SEEDS, Items.PUMPKIN_SEEDS);
         put(Items.SUGAR, Items.REDSTONE);
         put(Items.REDSTONE, Items.GLOWSTONE_DUST);
         put(Items.GLOWSTONE_DUST, Items.GUNPOWDER);
@@ -49,7 +50,7 @@ public class TransmutationTable extends Block {
     @Override
     public ActionResult onUse(BlockState blockState, World world, BlockPos blockPos, PlayerEntity player, Hand hand, BlockHitResult hit) {
         if (player instanceof ServerPlayerEntity) {
-            int xpneeded = requiredExperience(player, hand);
+            int xpneeded = (requiredExperience(player, hand)*player.getStackInHand(hand).getCount());
             // Check if the player has enough experience OR is in creative
             if (player.totalExperience > xpneeded - 1 || player.isCreative()) {
                 player.addExperience((-xpneeded));

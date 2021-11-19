@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "transmutation:item/true_gold_helmet"
+  }
+}

@@ -19,15 +19,15 @@ public class ExtractionTable extends Block {
 
     @Override
     public ActionResult onUse(BlockState blockState, World world, BlockPos blockPos, PlayerEntity player, Hand hand, BlockHitResult hit) {
-        //if (!(player.getStackInHand(hand).getItem() instanceof LeadItem)) {
+        if (!(player.getStackInHand(hand).getItem() instanceof LeadItem)) {
         final int itemCount = player.getStackInHand(hand).getCount();
         player.addExperience((itemCount));
         ItemStack lead = RegisterItems.LEAD_SCRAP.getDefaultStack();
         lead.setCount(itemCount);
         player.setStackInHand(hand, lead);
         return ActionResult.SUCCESS;
-       // } else {
-       //     return ActionResult.FAIL;
-        //}
+        } else {
+            return ActionResult.FAIL;
+        }
     }
 }

@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "transmutation:lead_scrap",
+    "transmutation:lead_ingot",
+    "transmutation:lead_block"
+  ]
+}
