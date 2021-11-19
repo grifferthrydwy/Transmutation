@@ -7,14 +7,14 @@
   ],
   "key": {
     "W": {
-      "item": "minecraft:gold_ingot"
+      "item": "transmutation:lead_ingot"
     },
     "R": {
       "tag": "minecraft:planks"
     }
   },
   "result": {
-    "item": "transmutation:extraction_table",
+    "item": "transmutation:transmutation_table",
     "count": 1
   }
 }

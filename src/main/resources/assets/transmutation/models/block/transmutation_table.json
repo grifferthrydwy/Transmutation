@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:block/cube",
   "textures": {
-    "particle": "minecraft:block/transmutation_table_front",
-    "north": "minecraft:block/transmutation_table_front",
-    "south": "minecraft:block/transmutation_table_front",
-    "east": "minecraft:block/transmutation_table_side",
-    "west": "minecraft:block/transmutation_table_side",
-    "up": "minecraft:block/transmutation_table_top",
-    "down": "minecraft:block/transmutation_table_bottom"
+    "particle": "transmutation:block/transmutation_table_front",
+    "north": "transmutation:block/transmutation_table_front",
+    "south": "transmutation:block/transmutation_table_front",
+    "east": "transmutation:block/transmutation_table_side",
+    "west": "transmutation:block/transmutation_table_side",
+    "up": "transmutation:block/transmutation_table_top",
+    "down": "transmutation:block/transmutation_table_bottom"
   }
 }
