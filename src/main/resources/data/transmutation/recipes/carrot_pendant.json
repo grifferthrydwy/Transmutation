@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " WY",
+    "WRW",
+    " W "
+  ],
+  "key": {
+    "W": {
+      "item": "transmutation:true_gold_ingot"
+    },
+    "R": {
+      "item": "minecraft:carrot"
+    },
+    "Y": {
+      "item": "minecraft:lead"
+    }
+  },
+  "result": {
+    "item": "transmutation:carrot_pendant",
+    "count": 1
+  }
+}

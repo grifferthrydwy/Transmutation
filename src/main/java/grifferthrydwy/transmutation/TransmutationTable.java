@@ -41,6 +41,10 @@ public class TransmutationTable extends Block {
         put(Items.GUNPOWDER, Items.SUGAR);
         put(Items.QUARTZ, Items.AMETHYST_SHARD);
         put(Items.AMETHYST_SHARD, Items.QUARTZ);
+        put(Items.SAND, Items.RED_SAND);
+        put(Items.RED_SAND, Items.SAND);
+        put(Items.SOUL_SAND, Items.SOUL_SOIL);
+        put(Items.SOUL_SOIL, Items.SOUL_SAND);
     }};
 
     public TransmutationTable(Settings settings) {
@@ -61,7 +65,7 @@ public class TransmutationTable extends Block {
             }
         }
         // A replacement for the if else statements
-        return ActionResult.FAIL;
+        return ActionResult.SUCCESS;
     }
 
 

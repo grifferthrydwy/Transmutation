@@ -1,5 +1,6 @@
 package grifferthrydwy.transmutation;
 
+import dev.emi.trinkets.api.TrinketItem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
@@ -24,6 +25,7 @@ public class RegisterItems {
     public static ToolItem TRUE_GOLD_PICKAXE = new TrueGoldPickaxeItem(TrueGoldToolMaterial.INSTANCE, 1, -2.8F, new Item.Settings().group(ItemGroup.TOOLS));
     public static ToolItem TRUE_GOLD_AXE = new TrueGoldAxeItem(TrueGoldToolMaterial.INSTANCE, 5, -3.0F, new Item.Settings().group(ItemGroup.TOOLS));
     public static ToolItem TRUE_GOLD_HOE = new TrueGoldHoeItem(TrueGoldToolMaterial.INSTANCE, -4, 0.0F, new Item.Settings().group(ItemGroup.TOOLS));
+    public static Item CARROT_PENDANT = new CarrotPendant(new Item.Settings().group(ItemGroup.MISC));
     public static void register() {
         Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "true_gold_ingot"), TRUE_GOLD_INGOT);
         Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "true_gold_helmet"), TRUE_GOLD_HELMET);
@@ -37,6 +39,7 @@ public class RegisterItems {
         Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "true_gold_axe"), TRUE_GOLD_AXE);
         Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "true_gold_hoe"), TRUE_GOLD_HOE);
         Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "true_gold_pickaxe"), TRUE_GOLD_PICKAXE);
+        Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "carrot_pendant"), CARROT_PENDANT);
         Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "extraction_table"), new BlockItem(RegisterBlocks.EXTRACTION_TABLE, new FabricItemSettings().group(ItemGroup.DECORATIONS)));
         Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "transmutation_table"), new BlockItem(RegisterBlocks.TRANSMUTATION_TABLE, new FabricItemSettings().group(ItemGroup.DECORATIONS)));
         Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "lead_block"), new BlockItem(RegisterBlocks.BLOCK_OF_LEAD, new FabricItemSettings().group(ItemGroup.BUILDING_BLOCKS)));

@@ -16,6 +16,14 @@ repositories {
 		content { includeGroup "curse.maven" }
 	}
 	maven { url 'https://storage.googleapis.com/devan-maven/' }
+	maven {
+		name "TerraformersMC"
+		url "https://maven.terraformersmc.com/"
+	}
+	maven {
+		name "Ladysnake Libs"
+		url "https://ladysnake.jfrog.io/artifactory/mods"
+	}
 }
 
 dependencies {
@@ -24,6 +32,7 @@ dependencies {
 	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
 	// Fabric API
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
+	modImplementation "dev.emi:trinkets:3.0.4"
 	//Libs n stuff
 	include modImplementation("curse.maven:simplylib-525225:3472201")
 	include modImplementation("net.devtech:arrp:0.5.3")
