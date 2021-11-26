@@ -33,8 +33,7 @@ dependencies {
 	// Fabric API
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 	modImplementation "dev.emi:trinkets:3.0.4"
-	//Libs n stuff
-	include modImplementation("curse.maven:simplylib-525225:3472201")
+	//Libraries & APIs
 	include modImplementation("net.devtech:arrp:0.5.3")
 }
 

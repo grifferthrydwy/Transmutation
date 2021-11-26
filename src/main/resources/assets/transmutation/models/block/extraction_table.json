@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "particle": "transmutation:block/extraction_table_front",
+    "north": "transmutation:block/extraction_table_front",
+    "south": "transmutation:block/extraction_table_front",
+    "east": "transmutation:block/extraction_table_side",
+    "west": "transmutation:block/extraction_table_side",
+    "up": "transmutation:block/extraction_table_top",
+    "down": "transmutation:block/extraction_table_bottom"
+  }
+}
