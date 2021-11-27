@@ -12,6 +12,8 @@
   "item.transmutation.lead_ingot": "Lead Ingot",
   "item.transmutation.lead_scrap": "Lead Scrap",
   "item.transmutation.extraction_table": "Extraction Table",
+  "block.transmutation.extraction_table": "Extraction Table",
   "item.transmutation.transmutation_table": "Transmutation Table",
+  "block.transmutation.transmutation_table": "Transmutation Table",
   "item.transmutation.carrot_pendant": "Carrot Pendant"
 }
