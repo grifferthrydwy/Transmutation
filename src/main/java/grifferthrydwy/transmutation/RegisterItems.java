@@ -14,8 +14,8 @@ public class RegisterItems {
 
     public static final ArmorMaterial TRUE_GOLD = new TrueGoldArmorMaterial();
     public static final Item TRUE_GOLD_INGOT = new Item(new Item.Settings().group(ItemGroup.MISC));
-    public static final Item LEAD_INGOT = new Item(new Item.Settings().group(ItemGroup.MISC));
-    public static final Item LEAD_SCRAP = new Item(new Item.Settings().group(ItemGroup.MISC));
+    public static final LeadItem LEAD_INGOT = new LeadItem(new Item.Settings().group(ItemGroup.MISC));
+    public static final LeadItem LEAD_SCRAP = new LeadItem(new Item.Settings().group(ItemGroup.MISC));
     public static final Item TRUE_GOLD_HELMET = new ArmorItem(TRUE_GOLD, EquipmentSlot.HEAD, new Item.Settings().group(ItemGroup.COMBAT));
     public static final Item TRUE_GOLD_CHESTPLATE = new ArmorItem(TRUE_GOLD, EquipmentSlot.CHEST, new Item.Settings().group(ItemGroup.COMBAT));
     public static final Item TRUE_GOLD_LEGGINGS = new ArmorItem(TRUE_GOLD, EquipmentSlot.LEGS, new Item.Settings().group(ItemGroup.COMBAT));
