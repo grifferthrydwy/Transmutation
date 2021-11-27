@@ -15,5 +15,9 @@
   "block.transmutation.extraction_table": "Extraction Table",
   "item.transmutation.transmutation_table": "Transmutation Table",
   "block.transmutation.transmutation_table": "Transmutation Table",
+  "item.transmutation.true_gold_block": "Block of True Gold",
+  "item.transmutation.lead_block": "Block of Lead",
+  "block.transmutation.true_gold_block": "Block of True Gold",
+  "block.transmutation.lead_block": "Block of Lead",
   "item.transmutation.carrot_pendant": "Carrot Pendant"
 }
