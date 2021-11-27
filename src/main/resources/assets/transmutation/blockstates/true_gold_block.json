@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "transmutation:block/true_gold_block" }
+  }
+}
