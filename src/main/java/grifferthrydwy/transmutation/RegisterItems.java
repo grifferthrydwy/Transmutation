@@ -25,7 +25,7 @@ public class RegisterItems {
     public static ToolItem TRUE_GOLD_PICKAXE = new TrueGoldPickaxeItem(TrueGoldToolMaterial.INSTANCE, 1, -2.8F, new Item.Settings().group(ItemGroup.TOOLS));
     public static ToolItem TRUE_GOLD_AXE = new TrueGoldAxeItem(TrueGoldToolMaterial.INSTANCE, 5, -3.0F, new Item.Settings().group(ItemGroup.TOOLS));
     public static ToolItem TRUE_GOLD_HOE = new TrueGoldHoeItem(TrueGoldToolMaterial.INSTANCE, -4, 0.0F, new Item.Settings().group(ItemGroup.TOOLS));
-    public static Item CARROT_PENDANT = new CarrotPendant(new Item.Settings().group(ItemGroup.MISC));
+    public static Item CARROT_PENDANT = new CarrotPendant(new Item.Settings().group(ItemGroup.MISC).maxCount(1));
     public static void register() {
         Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "true_gold_ingot"), TRUE_GOLD_INGOT);
         Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "true_gold_helmet"), TRUE_GOLD_HELMET);

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "WWW",
+    "WWW",
+    "WWW"
+  ],
+  "key": {
+    "W": {
+      "item": "transmutation:lead_ingot"
+    }
+  },
+  "result": {
+    "item": "transmutation:lead_block",
+    "count": 1
+  }
+}
